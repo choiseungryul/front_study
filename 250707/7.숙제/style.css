@@ -1,3 +1,50 @@
-.id input:focus {
-  background: gray;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 20px;
+}
+
+#wrap {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: red;
+  color: white;
+}
+
+.login div {
+  display: inline-block;
+}
+
+input:focus {
+  background-color: gainsboro;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+.box1 {
+  background-color: red;
+}
+.box2 {
+  background-color: blue;
+  transition: 0.5s linear;
+}
+.box3 {
+  background-color: green;
+}
+
+.box2:hover {
+  transform: scale(2);
+  transition: 0.5s linear;
 }
