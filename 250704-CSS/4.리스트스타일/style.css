@@ -1,0 +1,18 @@
+ol {
+  list-style-type: upper-roman;
+}
+ul > li {
+  /* list-style-image: url("../../images/pepe.jpg");
+  list-style-type: none;
+  background-image: url(../../images/pepe.jpg);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: left center;
+  /* 간격 설정 : 위 오른쪽 아래 왼쪽 순서
+  margin: 0;
+  padding: 0px 0 0px 10px;  */
+}
+
+ul {
+  list-style-position: inside;
+}

@@ -1,0 +1,36 @@
+.float {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  background-color: rebeccapurple;
+}
+
+.box2 {
+  background-color: yellowgreen;
+}
+
+.box3 {
+  background-color: pink;
+  float: right;
+}
+
+.box4 {
+  background-color: grey;
+  margin: auto; /* 박스 가운데 정렬 */
+}
+
+.container {
+  height: 200px;
+  border: 2px solid skyblue;
+  overflow: scroll; /* 벗어난 만큼의 영역을 맞춰줌(auto, scroll) */
+}

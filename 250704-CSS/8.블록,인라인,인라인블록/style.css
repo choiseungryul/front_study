@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+span, a {
+  border: 1px solid blue;
+}
+
+span {
+  width: 100px;
+  height: 200px;
+  /* 인라인 요소 - span, a, u, i 태그 등 
+  한줄에 여러개 배치가 가능했으며 내용에 맞춰 크기가 정해짐
+  그러나 크기 설정을 못함(너비, 높이). 상하 마진 설정 못함(단, 좌우는 가능) */
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+  /* 상,하 마진도 적용을 못함 */
+
+a {
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 5px;
+}
+  /* 하지만 좌,우 마진 가능. 패딩도 가능함 */
+
+  i {
+    display: block;
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+  }
+  /* 블록요소 - div, p, table, ul, ol 태그 등
+  한줄에 한개만 설정, 기본 너비는 100% 설정
+  크기 설정 가능함. 상하좌우 마진 설정 가능함
+  가운데 정렬을 하고 싶으면 "margin-auto를 사용함
+  단, 너비가 100%(설정안했을)경우에는 안됨 */
+
+  ul {
+    border: 1px solid crimson;
+    text-align: center;
+  }
+
+  ul > li {
+    display: inline-block;
+    border: 2px solid salmon;
+    width: 100px;
+    text-align: center;
+  }
+  /* 그래서 인라인블록 요소가 생김 - img, input, button 등
+  한줄에 여러개 배치가 가능함( 인라인 특징 )
+  내용에 맞춰 크기가 정해짐( 인라인 특징 )
+  크기 설정이 가능함( 블럭 장점 )
+  상하좌우 마진 설정 가능( 블럭 장점 )
+  가운데 정렬을 하려면 상위 요소한테 "text-align"속성 지정하면 됨 */

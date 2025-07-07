@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ff0;
+}
+.profile {
+  width: 500px;
+  border-bottom: 1px solid gray;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.face-image {
+  background-image: url(image/bambi.jpg);
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 400px;
+  margin-bottom: 10px;
+}
+.name h1 {
+  font-size: 20px;
+}
+.info img {
+width: 35px;
+height: 35px;
+}
+.info {
+  margin: 0 auto;
+  text-align: center;
+  width: 500px;
+}
+.icon {
+  padding-top: 10px;
+  padding-left: 25px;
+}
+.icon div {
+  float: left;
+  margin: 0 20px;
+}

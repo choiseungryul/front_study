@@ -1,0 +1,26 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+} /* 보통 처음에 위처럼 사이즈 정해놓고 시작 */
+
+h1 {
+  border: 2px solid gray;
+  /* border-style: dotted dashed solid groove; */
+  /* border-radius: 10%; */
+  border-top-left-radius: 10px;
+  border-top-color: blue;
+  border-bottom-width: 20px;
+
+  padding: 5px 3px 2px 1px;
+  /* 위 오른쪽 아래 왼쪽 순으로 적용 - 4개 적용 시 */
+  margin: 10px 20px 30px;
+  /* 위 [왼, 오른] 아래 순으로 적용 - 3개 적용 시 */
+  /* [위, 아래] [왼, 오른] 순으로 적용 - 2개 적용 시 */
+  margin-left: 100px;
+
+  width: 350px;
+  height: 300px;
+
+  box-shadow: inset 2px 4px 5px green;
+}
