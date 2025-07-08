@@ -1,0 +1,70 @@
+.parent {
+  border: 1px solid red;
+  height: 500px;
+  display: flex; /* flex로 설정하면 flex-direction이 row(기본값)으로 설정되서 자식들 방향 배치됨 */
+  justify-content: space-between; /* justify-content : 자식요소들을 정렬 */
+   /* space-around : 일정하게 간격 조절 후 가운데 정렬 */
+   /* space-between : 좌우 여백없이 간격 조절 후 가운데 정렬 */
+   align-items: center; /* align-items : 자식요소 세로 정렬 */
+}
+/* flex 박스에 자식으로 있는 요소는 높이를 설정하지 않으면 부모크기에 맞춰짐 */
+.child {
+  background: paleturquoise;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.parent2 {
+  border: 1px solid blue;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child2 {
+  width: 100px;
+  height: 100px;
+  background: palevioletred;
+  text-align: center;
+  line-height: 100px;
+}
+.parent3 {
+  border: 1px solid brown;
+  height: 500px;
+  display: flex;
+  flex-direction: column-reverse;
+   /* row-reverse : 가로 역방향 배치 */
+   /* column : 세로 배치 */
+   /* column-reverse : 세로 역방향 배치 */
+}
+.child3 {
+  width: 100px;
+  height: 100px;
+  background: peachpuff;
+  text-align: center;
+  line-height: 100px;
+}
+.parent4 {
+  border: 1px solid red;
+  height: 600px;
+  display: flex;
+  /* flex-wrap : 부모크기에 맞춰 넣을건지 줄바꿈할건지 설정 */
+  /* => flex-wrap: wrap-reverse; */
+   /* nowrap(기본값) : 줄바꿈 안함 -> 자식 크기가 줄어듬 */
+   /* wrap : 줄바꿈 함(너비에 맞춰) */
+
+   /* 배치방향과 줄바꿈은 하나의 속성으로 처리가 가능함 */
+   flex-flow: row wrap;
+   /* wrap일 경우, 자식들 간격 설정 가능 */
+   align-content: space-between;
+}
+.parent4 > div {
+  width: 100px;
+  height: 100px;
+  background: paleturquoise;
+  margin: 5px;
+  text-align: center;
+  line-height: 100px;
+}

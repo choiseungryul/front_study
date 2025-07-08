@@ -1,0 +1,64 @@
+.parent {
+  border: 1px solid red;
+  display: flex;
+}
+.parent > div {
+  /* width: 100px; */
+  height: 100px;
+  background: aqua;
+  margin: 5px;
+}
+ /* flex-grow : 부모 기준 자식들의 너비를 일정 비율만큼 분배(기본값 : 0) */
+.child1 {
+  /* flex-grow : 증가 비율 */
+  flex-grow: 1;
+  /* flex-shrink : 감소 비율 */
+  flex-shrink: 3;
+}
+.child2 {
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+.child3 {
+  flex-grow: 3;
+  flex-shrink: 1;
+}
+.parent2 {
+  border: 1px solid blue;
+  height: 500px;
+  display: flex;
+}
+.parent2 > div {
+  height: 100px;
+  width: 100px;
+  background: darkkhaki;
+  margin: 5px;
+}
+.child4 {
+  /* flex: 1; */
+  /* order: 1; /* order : 순서지정(0부터 시작함) */
+  align-self: center; /* align-self : 자식 개별 요소 지정 */
+}
+.child5 {
+  flex: 1;
+  /* order: 2; */
+}
+.child6 {
+  flex: 1;
+  /* order: 0; */
+}
+.parent3 {
+  border: 1px solid red;
+  display: flex;
+}
+.parent3 > div {
+  width: 100px;
+  height: 100px;
+  background: palevioletred;
+}
+.child7 {
+  /* margin-right: auto; */
+}
+.child8 {
+  margin: auto;
+}

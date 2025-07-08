@@ -1,0 +1,11 @@
+/* 동위(형제) 선택자 : 기준요소 뒤부터 적용 */
+h1 ~ p {
+  background: palegreen;
+}
+/* 동위(형제) 선택자 : 기준요소 뒤부터 가장 가까운 형제 하나 적용 */
+h1 + p {
+  color: red;
+}
+input[type="radio"]:checked + label {
+background: palevioletred;
+}

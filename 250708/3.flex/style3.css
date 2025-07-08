@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 1200px;
+  height: 50px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+.container > img {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+}
+a {
+  display: inline-block;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 0;
+}
+.search {
+  display: flex;
+  gap: 10px;
+}
+.search input {
+  background-color: gainsboro;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.search button {
+  padding: 5px 12px;
+  border: none;
+  border-radius: 4px;
+}
+.main {
+  width: 1200px;
+  height: 800px;
+  background-color: #fbf7f2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.text1 {
+  margin: 10px;
+  padding: 10px;
+}
+.text1 h1 {
+  font-size: 50px;
+}
+.text1 h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.main > img {
+  width: 800px;
+  height: 685px;
+}
+.bottom {
+  width: 1200px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+}
+.bottom > img {
+  width: 530px;
+  height: 685px;
+  margin-left: 40px;
+  margin-right: 20px;
+  padding: 30px;
+}
+.text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  padding-left: 60px;
+}
+.text2 h1 {
+  font-size: 40px;
+}
+.text2 h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.choice {
+  display: flex;
+  gap: 20px;
+}
+.box {
+  background-color: gainsboro;
+  padding: 20px;
+  border-radius: 8px;
+}
+.box a {
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+  width: 1200px;
+  height: 200px;
+  padding: 30px;
+}
+.navi {
+  display: flex;
+  gap: 60px;
+}
+.navi ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.navi li {
+  font-size: 12px;
+  padding: 8px 0;
+}

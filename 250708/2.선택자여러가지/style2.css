@@ -1,0 +1,49 @@
+h1::before {
+  content: "★";
+  color: wheat;
+}
+h1::after {
+  content: "K R";
+  background: wheat;
+  color: red;
+  font-size: 12px;
+  border-radius: 5px;
+  position: absolute;
+}
+.img {
+  width: 500px;
+  height: 500px;
+  background: url(../../images/pepe.jpg) no-repeat;
+  position: relative;
+  background-size: cover;
+}
+.img::before {
+  content: "이미지글씨";
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  line-height: 500px; /* 줄간격 이용해서 정렬 */
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.content {
+  background: palevioletred;
+  width: calc(100% - 200px);
+}
+.aside {
+  background-color: plum;
+  width: 200px;
+}
+.container > div {
+  float: left;
+  height: 50px;
+}
+.wrapper > b {
+  font-size: 40px;
+  vertical-align: middle;
+ /* vertical-align : 인라인, 인라인브록들을 세로 가운데 정렬하고 싶을 때 사용 */
+}
